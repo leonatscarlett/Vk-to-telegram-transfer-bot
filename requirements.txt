@@ -1,4 +1,4 @@
 pyTelegramBotAPI
-vk_api
+vk_api == 9.3.2
 datetime
 Pillow
