@@ -22,12 +22,16 @@ def initConfig():
 
 	setCell( "vk_AddFriends", False ) # Автоматически добавлять новых пользователей в друзья?
 
-	setCell( "vk_login", "78005553535" ) # Логин от аккаунта ВК
-	setCell( "vk_password", "Password" ) # Пароль от аккаунта ВК
-
-	setCell( "telegram_token", "12345678:ABcDeFgHeVzS-6543-dWEdGAJ1234" ) # Токен ботинка в Telegram
-
-	setCell( "telegram_SendName", False ) # Отправлять в ВК текст с именем отправителя из Telegram
+	
+	setCell( "vk_login", "79997842405" ) # Логин от аккаунта ВК
+	setCell( "vk_password", "arcu8brun8stud" ) # Пароль от аккаунта ВК
+ 
+	
+	setCell( "telegram_token", "470919092:AAG0ynT2ik9V-nLrsAXW-8PQSypJUjfgRU8" ) # Токен ботинка в Telegram
+ 
+	
+	setCell( "telegram_SendName", True ) # Отправлять в ВК текст с именем отправителя из Telegram
+ 
 
 	#############################################################
 	########                                             ########
