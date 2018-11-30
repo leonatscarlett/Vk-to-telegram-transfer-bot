@@ -233,19 +233,21 @@ def TransferMessageToVK( chatid, text, fromUser, Attachment ):
 		GetSticker = db.CheckSticker( Attachment )
 
 		# Если стикер не найден в БД
-		if GetSticker is None:
+if GetSticker is None:
 			StickerURL = 'https://api.telegram.org/file/bot{0}/{1}'.format( config.getCell( 'telegram_token' ), Attachment )
 			SaveSticker( StickerURL, Attachment )
 			GetSticker = db.CheckSticker( Attachment )
-
+			text = str( fromUser + ': ' )
+ 
 		#print( GetSticker )
-
+ 
 		try:
-			module.vk.messages.send( chat_id = config.getCell( 't_' + chatid ), message = "", attachment = GetSticker )
+			module.vk.messages.send( chat_id = config.getCell( 't_' + chatid ), message = text, attachment = GetSticker )
 		except vk_api.ApiError as error_msg:
 			module.vk.messages.send( user_id = config.getCell( 't_' + chatid ), message = "", attachment = GetSticker )
-
+ 
 	return False
+ 
 
 def CheckRedirect_telegram( chatid, text, fromUser, Attachment ):
 	if not config.getCell( 't_' + chatid ) is None:
