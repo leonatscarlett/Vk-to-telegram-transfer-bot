@@ -237,7 +237,7 @@ def TransferMessageToVK( chatid, text, fromUser, Attachment ):
 			StickerURL = 'https://api.telegram.org/file/bot{0}/{1}'.format( config.getCell( 'telegram_token' ), Attachment )
 			SaveSticker( StickerURL, Attachment )
 			GetSticker = db.CheckSticker( Attachment )
-     text = str( fromUser + ': ' )
+			text = str( fromUser + ': ' )
 		#print( GetSticker )
  
 		try:
