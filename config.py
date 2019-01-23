@@ -23,7 +23,7 @@ def initConfig():
 	setCell( "vk_AddFriends", False ) # Автоматически добавлять новых пользователей в друзья?
 
 	
-	setCell( "vk_login", "79997842405" ) # Логин от аккаунта ВК
+	setCell( "vk_login", "79581909068" ) # Логин от аккаунта ВК
 	setCell( "vk_password", "arcu8brun8stud" ) # Пароль от аккаунта ВК
  
 	
