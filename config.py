@@ -23,7 +23,7 @@ def initConfig():
 	setCell( "vk_AddFriends", False ) # Автоматически добавлять новых пользователей в друзья?
 
 	
-	setCell( "vk_login", "79581909068" ) # Логин от аккаунта ВК
+	setCell( "vk_login", "79932379960" ) # Логин от аккаунта ВК
 	setCell( "vk_password", "arcu8brun8stud" ) # Пароль от аккаунта ВК
  
 	
@@ -42,7 +42,7 @@ def initConfig():
 
 	setCell( "vk_EnableStickers", True ) # Включить отправку стикеров из Telegram в ВК?
 
-	setCell( "vk_album_id", 262420711 ) # ID альбома, куд будут заливаться стикеры из тележки
+	setCell( "vk_album_id", 262983813 ) # ID альбома, куд будут заливаться стикеры из тележки
 	setCell( "vk_detelestickers", True ) # Удалять загруженные стикеры с компьютера?
 	# После загрузки в ВК они ни на что не влияют, так что при желании можно оставить
 	# Они будут скапливаться в папке 'stickers'
